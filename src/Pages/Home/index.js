@@ -35,7 +35,7 @@ export default () => {
    </main>
    
    <footer>
-   <p> Desenvolvido por Carolina Menezes e Lilian Damadi</p>
+   <p> Desenvolvido por Lilian Damadi</p>
    </footer>
 
      

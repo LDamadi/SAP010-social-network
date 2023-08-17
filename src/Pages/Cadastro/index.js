@@ -38,7 +38,7 @@ export function cadastro() {
    </main>
 
    <footer>
-     <p> Desenvolvido por Carolina Menezes e Lilian Damadi</p>
+    <p> Desenvolvido por Lilian Damadi</p>
    </footer>
 `;
   containerCadastro.innerHTML = templateCadastro;
