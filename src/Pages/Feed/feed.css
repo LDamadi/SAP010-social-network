@@ -1,47 +1,64 @@
-* {
-    margin :  0 ;
-    padding:  0;
+/* Estilizei a área de postagem */
 
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 200%;
+  max-width: 600px; /* Defina a largura máxima desejada */
+  margin: 0 auto; /* Centralize o conteúdo */
 }
 
-main {
-     background : rgb(164, 164, 206);
-
+/* Estilizei para o botão de postar */
+.btn-post {
+  display: flex;
+  gap: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-
-.container-feed {
-   background:  rgb(164, 164, 206);
-   display: flex;
-    flex-direction: columm;
-    gap: 10px ;
-    align-items: centro;
-    max-width: 800px ;
+/* Estilo para o botão de excluir */
+.excluir-post {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 textarea {
-    width : 400px ; 
-    height: 120px ;
+  width: 400px;
+  height: 120px;
 
 }
 
 .postagem {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 3px solid hsl(0, 81%, 27%);
+  border-radius: 20%;
+  
   }
 
-  .postagem p:first-child {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+.postagem p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-  .postagem p:last-child {
-    color: #666;
-  }
+.postagem p:last-child {
+  color: #666;
+}
 
 footer {
-    display: flex;
-    align-items: center;
-    max-width: 200px ;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
 }

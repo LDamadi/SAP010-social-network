@@ -1,7 +1,7 @@
   import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"; /*acrescentei somente  signInWithEmailAndPassword para login*/
   import { auth } from "./configurações_do_firebase/"; /*importei do configurações do firebase*/
   import { db } from "./configurações_do_firebase/";
-  import { addDoc, collection, getDocs } from "firebase/firestore";
+  import { addDoc, collection, getDocs, deleteDoc, doc } from "firebase/firestore";
   
 
 
@@ -57,12 +57,16 @@
 
 export const excluirPost = async (postId) => {
   try {
-    await deleteDoc(doc(db, "postagens", postId)); // Exclui o documento com o ID especificado
+  const docId = doc(db, "postagens", postId);
+    await deleteDoc(docId); // Exclui o documento com o ID especificado
     console.log("Postagem excluída com sucesso!");
   } catch (error) {
     console.error("Erro ao excluir postagem:", error);
   }
 };
+
+
+
 
 //import { getAuth, signOut } from "firebase/auth";
 
