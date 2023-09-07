@@ -8,7 +8,7 @@ export function feed() {
   feedPage.href = "pages/Feed/feed.css";
   document.head.appendChild(feedPage);
 
-  
+
   const header = document.createElement("header");
   header.innerHTML = `
     <p>"Há palavras que ferem como espada, mas a língua dos sábios traz a cura... Provérbios 12:18".</p>
@@ -74,12 +74,13 @@ export function feed() {
 
         const excluirButton = document.createElement("button");
         excluirButton.textContent = "Excluir";
-        excluirButton.dataset.postId = post.id; // Adicione o ID da postagem como um atributo de dados
+        excluirButton.dataset.postId = post.postId; // Adicione o ID da postagem como um atributo de dados
 
         excluirButton.addEventListener("click", async () => {
+          console.log(excluirButton.dataset.postId)
           const postId = excluirButton.dataset.postId;
           await excluirPost(postId);
-          
+
           postContainer.removeChild(postElement); // Remova a postagem após a exclusão
         });
 
