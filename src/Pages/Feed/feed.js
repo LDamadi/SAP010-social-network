@@ -79,6 +79,7 @@ export function feed() {
         excluirButton.addEventListener("click", async () => {
           const postId = excluirButton.dataset.postId;
           await excluirPost(postId);
+          
           postContainer.removeChild(postElement); // Remova a postagem após a exclusão
         });
 

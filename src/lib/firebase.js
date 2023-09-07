@@ -1,7 +1,7 @@
   import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"; /*acrescentei somente  signInWithEmailAndPassword para login*/
   import { auth } from "./configurações_do_firebase/"; /*importei do configurações do firebase*/
   import { db } from "./configurações_do_firebase/";
-  import { addDoc, collection, getDocs, deleteDoc, doc } from "firebase/firestore";
+  import { addDoc, collection, getDocs, deleteDoc, doc, updateDoc } from "firebase/firestore";
   
 
 
@@ -17,7 +17,6 @@
   export function fazerLogin (email, password) {
 
   return signInWithEmailAndPassword(auth, email, password) /*função da promessa*/ 
-
     
   }
   
@@ -46,11 +45,16 @@
   export const buscarPostagens = async () => {
     const mensagensRef = collection(db, "postagens");
     const querySnapshot = await getDocs(mensagensRef);
-
     const postagens = [];
     querySnapshot.forEach((doc) => {
     const post = doc.data();
+    if(!post.excluido) { // para salvar os itens excluidos 
+     
+    
+
     postagens.push(post);
+
+  }
     });
     return postagens;
 };
@@ -58,7 +62,8 @@
 export const excluirPost = async (postId) => {
   try {
   const docId = doc(db, "postagens", postId);
-    await deleteDoc(docId); // Exclui o documento com o ID especificado
+     await updateDoc(docId,{excluido:true}); 
+    //await deleteDoc(docId); // Exclui o documento com o ID especificado
     console.log("Postagem excluída com sucesso!");
   } catch (error) {
     console.error("Erro ao excluir postagem:", error);
