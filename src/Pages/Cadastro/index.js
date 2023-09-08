@@ -1,5 +1,6 @@
 import { cadastrarEmail } from "../../lib/firebase"; /*está importando a função cadastrarEmail do arquivo localizado em firebase.js*/
 import logo_mundo_azul from "../Imagens/Mundo_azul_logo.png"
+  
 export function cadastro() {
   const containerCadastro = document.createElement("div");
 

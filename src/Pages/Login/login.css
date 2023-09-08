@@ -1,82 +1,80 @@
-
 /* Estilos para dispositivos móveis (largura de tela até 768px) */
 @media screen and (max-width: 768px) {
-    body {
-      background-color: #007bff;
-      font-size: 14px;
-    }
-     
-    .container-login {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
-  
-    .logotipo {
-      text-align: center;
-    }
-  
-    .formulario {
-      text-align: center;
-    }
-  
-    .bem_vindos {
-      font-size: 24px;
-      color: #0d1c3b;
-    }
-  
-    .icone_login,
-    .icone_senha {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .login,
-    .senha {
-      width: 100%;
-      margin: 10px 0;
-    }
+  body {
+    background-color: #007bff;
+    font-size: 14px;
   }
-  
-  
-  /* Estilos para desktop (largura de tela acima de 768px) */
-  @media screen and (min-width: 769px) {
-    body {
-      font-size: 18px;
-    }
-  
-    .container-login {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-  
-    .logotipo {
-      flex: 1;
-      padding: 20px;
-    }
-  
-    .formulario {
-      flex: 1;
-      text-align: center;
-    }
-  
-    .bem_vindos {
-      font-size: 32px;
-    }
-  
-    .icone_login,
-    .icone_senha {
-      width: 100px;
-      height: 100px;
-    }
-  
-    .login,
-    .senha {
-      width: 80%;
-      margin: 20px 0;
-    }
+   
+  .container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
-  
+
+  .logotipo {
+    text-align: center;
+  }
+
+  .formulario {
+    text-align: center;
+  }
+
+  .bem_vindos {
+    font-size: 24px;
+    color: #0d1c3b;
+  }
+
+  .icone_login,
+  .icone_senha {
+    width: 30px;
+    height: 30px;
+  }
+
+  .login,
+  .senha {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+
+/* Estilos para desktop (largura de tela acima de 768px) */
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .logotipo {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .formulario {
+    flex: 1;
+    text-align: center;
+  }
+
+  .bem_vindos {
+    font-size: 32px;
+  }
+
+  .icone_login,
+  .icone_senha {
+    width: 100px;
+    height: 100px;
+  }
+
+  .login,
+  .senha {
+    width: 80%;
+    margin: 20px 0;
+  }
+}
