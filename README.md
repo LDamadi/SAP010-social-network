@@ -1,17 +1,72 @@
 # Criando uma Rede Social
 
-## Índice
 
-* [1. Prefácio](#1-prefácio)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Entrega](#7-entrega)
-* [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
+
+* [1. Prefácio]
+ # [Rede Social – Mundo Azul]( https://github.com/LDamadi/SAP010-social-network)
+
+Mundo Azul pretende ser bem mais que apenas uma rede social; 	ansiamos ser um santuário de de apoio e compreensão para famílias e cuidadores de crianças no espectro do autismo.
+. Aqui, não importa se você é um pai, uma mãe, um avô, um amigo ou um cuidador dedicado; todos compartilhamos uma coisa em comum - o desejo de proporcionar o melhor cuidado e apoio para as crianças no espectro do autismo.
+
+Este projeto foi idealizado para desenvolvimento da estudante da turma SAP010 da Laboratória Lilian Damadi.  Este documento possibilita a nosso(a) usuário(a) obter as informações essenciais para entender o projeto de maneira eficiente. Aqui você encontrará o resultado de um trabalho árduo, criativo e dedicado.
+Agradeço  por dedicar seu tempo para conhecer este projeto
+Lilian Damadi
+
+* [2. História do usuário ]
+# História do usuário
+	Ao  escrever a história do usuário, levei em conta a necessidade do cliente “familiares e cuidadores de pessoas dentro do espectro do autismo” para atender a necessidade de um lugar seguro e acolhedor para conversas sobre o TEA.  
+•	Fiz a primeira  página com  login e senha para garantir a segurança dos usuários. 
+•	Pagina de cadastro para guardar mais dados sobre o usuário;
+•	Pagina Feed onde o usuário pode postar e excluir suas mensagens.
+
+## Critérios de aceitação e Definição de pronto: 
+•	É um SPA.
+•	É responsivo .
+•	Recebeu revisão de código de pelo menos uma parceira de outra equipe.
+•	Fez testes manuais buscando erros e imperfeições simples.
+•	Fez testes de usabilidade e incorporar o feedback dos usuários como melhorias.
+•	Fez deploy do aplicativo e marcar a versão (git tag).
+
+## Definição de pronto:
+
+Criação e login de conta de usuário:
+•	Faz login e postagens na timeline, usando Firebase;
+•	O usuário deve poder criar uma conta de acesso ou autenticar-se com conta de e-mail e senha e também com uma conta do Google.
+•	Validações: Somente usuários com contas válidas têm acesso permitido; Não há usuários repetidos; A conta do usuário deve ser um e-mail válido; O que o usuário digital no campo de senha ( input ) deve ser secreto; Quando o formulário de registro ou login for enviado, ele deverá ser validado; Se houver erros, mensagens descritivas devem ser exibidas para ajudar o usuário.
+Comportamento: 
+Ao recarregar o aplicativo, é necessário verificar se o usuário está logado antes de exibir o conteúdo; 
+Consegue publicar uma postagem; 
+Poder dar e remover curtidas em uma publicação;
+Máximo de um por usuário; 
+Você pode excluir uma postagem específica;
+Solicita confirmação antes de excluir uma postagem .
+
+* [3. Objetivos de aprendizagem]
+
+A lógica deste projeto foi completamente renovada em JavaScript (ES6+), HTML e CSS . Sem o uso de frameworks ou bibliotecas de CSS e JS;
+
+Durante seu  desenvolvimento  pude  reforçar o aprendizado em uso de elementos HTML semânticos, CSS, Controle de versões Git e Github,  manipulação dinâmica, APIS da Web -(Uso de seletores de DOM, Manipulação de eventos de DOM  Manipulação dinâmica de DOM, Roteamento), (API de histórico, evento hashchange, window.location);
+Em Java Script: matrizes (arranjos), Objetos (chave, valor), Variáveis (declaração, atribuição, escopo), Uso condicional (if-else, switch, operador ternário, lógica booleana), Uso de laços (enquanto, para, para..de), 	 Funções (parâmetros, argumentos, retorno),Módulos de ECMAScript (módulos ES);
+Uso de linter (ESLINT),  Uso de identificadores descritivos (Nomenclatura e Semântica),Diferença entre expressões (expressões) e declarações (declarações),  Retornos de chamada e Promessas;
+Desenhei e desenvolvi o serviço colocando os usuários no centro;
+O design de produto, foi feito inicialmente criando protótipos para obter feedback e iterar;
+Utilizei autenticação do Firebase e firestores (banco de dados).
+
+## Protótipo de Baixa Fidelidade
+
+![baixa fidelidade](src/img/Protótipo_de_Baixa_Definição.jpg)
+
+* [4. Considerações gerais]
+Com o apoio da ferramenta  Trello, foi possível planejar cada passo do projeto para ser executado durante uma Sprint. Guardei links de documentos e vídeos para apoio do aprendizado.
+Utilizei a documentação disponível no Firebase.
+
+# Encontre-nos
+Caso você tenha alguma  dúvida, problema ou sugestões relacionadas ao projeto, entre em contato.
+
+Lilian Rodrigues Polizelli Damadi 
+e-mail – lrpdmarcenaria01@gmail.com
+Linkedin - linkedin.com/in/lilian-damadi-59a223246
+
 
 ***
 
